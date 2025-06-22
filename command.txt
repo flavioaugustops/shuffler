@@ -1,0 +1,8 @@
+@echo off
+echo Empacotando SHUFFLER com PyInstaller (Windows)...
+
+pyinstaller --onefile --console --add-data "_library\bip_39\list.py;_library\bip_39" main.py
+
+echo.
+echo Build finalizado! O executável está em: dist\Shuffler.exe
+pause
